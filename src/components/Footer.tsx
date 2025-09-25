@@ -28,12 +28,11 @@ const Footer = () => {
               for regulatory compliance and sustainable development across India.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="bg-primary-light px-3 py-1 rounded-full">
-                ISO 9001:2015 Certified
-              </span>
-              <span className="bg-primary-light px-3 py-1 rounded-full">
-                OHSAS 45001:2018
-              </span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">ISO 9001:2015 Certified</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">OHSAS 45001:2018</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">NABET/QCI Accredited</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">NABL Accredited</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">JSPCB Recognized</span>
             </div>
           </div>
 
@@ -80,8 +79,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="h-4 w-4 mt-1 flex-shrink-0" />
                 <div className="text-sm">
-                  <div>8407804252 (MD)</div>
-                  <div>8407804251 (Director)</div>
+                  <div>8407804251</div>
+                  <div>8407804255</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">

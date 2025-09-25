@@ -30,7 +30,7 @@ const Header = () => {
               </div>
             </div>
             <div className="text-xs opacity-90">
-              ISO 9001:2015 & OHSAS 45001:2018 Certified
+              NABET/QCI and NABL Accredited
             </div>
           </div>
         </div>

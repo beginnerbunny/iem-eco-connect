@@ -17,14 +17,20 @@ const Credentials = () => {
       status: "Active"
     },
     {
-      title: "Government Approved",
-      description: "Recognized by various government bodies for environmental consultancy",
-      category: "Government Recognition",
+      title: "NABET/QCI Accredited",
+      description: "Accredited by NABET/QCI (EIA) for environmental consultancy",
+      category: "EIA Accreditation",
       status: "Active"
     },
     {
-      title: "SPCB Recognized",
-      description: "State Pollution Control Board recognition for monitoring services",
+      title: "NABL Accredited",
+      description: "NABL accreditation for laboratory testing and calibration competence",
+      category: "Laboratory Accreditation",
+      status: "Active"
+    },
+    {
+      title: "JSPCB Recognized",
+      description: "Recognition from Jharkhand State Pollution Control Board",
       category: "Regulatory Approval",
       status: "Active"
     }
