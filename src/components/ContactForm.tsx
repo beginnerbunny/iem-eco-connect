@@ -85,7 +85,7 @@ const ContactForm = () => {
       details: [
         "A-13, Saket Vihar, Harmu Housing Colony,",
         "Near Sohrai Bhawan, Harmu, Ranchi-834002 (JH)",
-        "Serving Pan-India"
+        "https://maps.app.goo.gl/NwyEUAZV8QjDNa428"
       ]
     }
   ];
