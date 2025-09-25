@@ -41,12 +41,21 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">
-              IEM
-              <span className="block text-sm font-normal text-muted-foreground">
-                Institute for Environmental Management
-              </span>
-            </h1>
+            <a href="#home" className="flex items-center gap-3">
+              <picture>
+                <source srcSet="/iem-logo.svg" type="image/svg+xml" />
+                <img
+                  src="/iem-logo.png"
+                  alt="IEM – Institute for Environmental Management"
+                  className="h-12 md:h-14 w-auto bg-transparent object-contain"
+                />
+              </picture>
+              <div className="leading-tight">
+                <span className="block text-xs md:text-sm font-normal text-muted-foreground">
+                  Institute for Environmental Management
+                </span>
+              </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
