@@ -68,7 +68,7 @@ const Header = () => {
               variant="default"
               className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary"
             >
-              Get Quote
+              Request a callback
             </Button>
           </div>
 
@@ -103,7 +103,7 @@ const Header = () => {
                 variant="default"
                 className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary mt-4"
               >
-                Get Quote
+                Request a callback
               </Button>
             </nav>
           </div>
