@@ -83,7 +83,8 @@ const ContactForm = () => {
       icon: MapPin,
       title: "Office Location",
       details: [
-        "Ranchi, Jharkhand, India",
+        "A-13, Saket Vihar, Harmu Housing Colony,",
+        "Near Sohrai Bhawan, Harmu, Ranchi-834002 (JH)",
         "Serving Pan-India"
       ]
     }
