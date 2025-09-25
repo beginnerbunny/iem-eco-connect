@@ -84,8 +84,7 @@ const ContactForm = () => {
       title: "Office Location",
       details: [
         "A-13, Saket Vihar, Harmu Housing Colony,",
-        "Near Sohrai Bhawan, Harmu, Ranchi-834002 (JH)",
-        "https://maps.app.goo.gl/NwyEUAZV8QjDNa428"
+        "Near Sohrai Bhawan, Harmu, Ranchi-834002 (JH)"
       ]
     }
   ];
@@ -112,7 +111,8 @@ const ContactForm = () => {
             <div className="lg:col-span-1 space-y-6">
               {contactInfo.map((info, index) => {
                 const IconComponent = info.icon;
-                return (
+                const isOfficeLocation = info.title === "Office Location";
+                const CardComponent = (
                   <Card key={index} className="border-l-4 border-l-primary">
                     <CardHeader className="pb-4">
                       <CardTitle className="flex items-center text-lg">
@@ -133,6 +133,22 @@ const ContactForm = () => {
                     </CardContent>
                   </Card>
                 );
+
+                if (isOfficeLocation) {
+                  return (
+                    <a
+                      key={index}
+                      href="https://maps.app.goo.gl/NwyEUAZV8QjDNa428"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block hover:transform hover:scale-105 transition-transform duration-200"
+                    >
+                      {CardComponent}
+                    </a>
+                  );
+                }
+
+                return CardComponent;
               })}
             </div>
 
