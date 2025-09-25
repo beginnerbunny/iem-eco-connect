@@ -60,9 +60,9 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
-              variant="outline" 
+              variant="outline-light" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8"
+              className="font-semibold px-8"
             >
               View Our Services
             </Button>
