@@ -67,7 +67,6 @@ const ContactForm = () => {
       icon: Phone,
       title: "Phone Numbers",
       details: [
-        "8407804252 (Mrs. Seema Jain, Managing Director)",
         "8407804251 (Dr. SC Jain, Director)",
         "8407804255 (Mr. Sumil Jain, Director)"
       ]
