@@ -7,8 +7,9 @@ const About = () => {
   const certifications = [
     "ISO 9001:2015",
     "OHSAS 45001:2018",
-    "Government Approved",
-    "SPCB Recognized"
+    "NABET/QCI Accredited",
+    "NABL Accredited",
+    "JSPCB Recognized"
   ];
 
   const keyPoints = [
@@ -47,10 +48,13 @@ const About = () => {
               Institute for Environmental Management
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              IEM is a premier environmental consultancy firm based in Ranchi, Jharkhand, 
-              providing comprehensive environmental solutions to industries across India. 
-              As an ISO 9001:2015 and OHSAS 45001:2018 certified organization, we maintain 
-              the highest standards of quality and safety in all our services.
+              Established in 2012, the Institute for Environmental Management (IEM) delivers
+              end‑to‑end environmental consulting, monitoring, and accredited laboratory services
+              across India. We are ISO 9001:2015 and OHSAS 45001:2018 certified; NABET/QCI
+              (Certificate No. NABET/EIA/24-27/IA 0137), NABL, and JSPCB accredited. Every
+              engagement is led by a dedicated project manager and supported by a multi‑disciplinary
+              team to provide timely, compliant, and business‑ready outcomes—helping clients meet
+              regulatory obligations while advancing sustainable performance.
             </p>
 
             {/* Certifications */}

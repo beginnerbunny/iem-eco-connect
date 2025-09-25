@@ -5,9 +5,9 @@ import heroImage from "@/assets/hero-environmental.jpg";
 const Hero = () => {
   const highlights = [
     "ISO 9001:2015 Certified",
-    "OHSAS 45001:2018 Compliant",
-    "20+ Years Experience",
-    "Government Approved"
+    "NABET/QCI Accredited",
+    "NABL Accredited",
+    "JSPCB Recognized"
   ];
 
   return (

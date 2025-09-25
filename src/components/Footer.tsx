@@ -9,6 +9,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-4">
+              <picture>
+                <source srcSet="/iem-logo.svg" type="image/svg+xml" />
+                <img
+                  src="/iem-logo.png"
+                  alt="IEM – Institute for Environmental Management"
+                  className="h-10 md:h-12 w-auto bg-transparent object-contain"
+                />
+              </picture>
+              <span className="sr-only">IEM – Institute for Environmental Management</span>
+            </div>
             <h3 className="text-2xl font-bold mb-4">
               Institute for Environmental Management
             </h3>
@@ -17,12 +28,11 @@ const Footer = () => {
               for regulatory compliance and sustainable development across India.
             </p>
             <div className="flex flex-wrap gap-4 text-sm">
-              <span className="bg-primary-light px-3 py-1 rounded-full">
-                ISO 9001:2015 Certified
-              </span>
-              <span className="bg-primary-light px-3 py-1 rounded-full">
-                OHSAS 45001:2018
-              </span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">ISO 9001:2015 Certified</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">OHSAS 45001:2018</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">NABET/QCI Accredited</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">NABL Accredited</span>
+              <span className="bg-primary-light px-3 py-1 rounded-full">JSPCB Recognized</span>
             </div>
           </div>
 
@@ -69,8 +79,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="h-4 w-4 mt-1 flex-shrink-0" />
                 <div className="text-sm">
-                  <div>8407804252 (MD)</div>
-                  <div>8407804251 (Director)</div>
+                  <div>8407804251</div>
+                  <div>8407804255</div>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
