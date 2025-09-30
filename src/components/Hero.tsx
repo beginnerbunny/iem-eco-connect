@@ -52,20 +52,24 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90 font-semibold px-8"
-            >
-              Get Environmental Consultation
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              variant="outline-light" 
-              size="lg"
-              className="font-semibold px-8"
-            >
-              View Our Services
-            </Button>
+            <a href="#contact">
+              <Button 
+                size="lg" 
+                className="bg-white text-primary hover:bg-white/90 font-semibold px-8 w-full"
+              >
+                Request a Callback
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            <a href="#services">
+              <Button 
+                variant="outline-light" 
+                size="lg"
+                className="font-semibold px-8 w-full"
+              >
+                View Our Services
+              </Button>
+            </a>
           </div>
         </div>
       </div>
