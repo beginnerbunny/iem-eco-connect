@@ -48,7 +48,7 @@ const About = () => {
               Institute for Environmental Management
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Established in 2012, the Institute for Environmental Management (IEM) delivers
+              Based out of Ranchi, Jharkhand, the Institute for Environmental Management (IEM) delivers
               end‑to‑end environmental consulting, monitoring, and accredited laboratory services
               across India. We are ISO 9001:2015 and OHSAS 45001:2018 certified; NABET/QCI
               (Certificate No. NABET/EIA/24-27/IA 0137), NABL, and JSPCB accredited. Every
