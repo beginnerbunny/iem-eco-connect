@@ -103,8 +103,8 @@ const About = () => {
             <Card className="absolute -bottom-6 -left-6 bg-white shadow-xl">
               <CardContent className="p-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">20+</div>
-                  <div className="text-sm text-muted-foreground">Years of Excellence</div>
+                  <div className="text-2xl font-bold text-primary">25+</div>
+                  <div className="text-sm text-muted-foreground">Years of Expertise</div>
                 </div>
               </CardContent>
             </Card>
