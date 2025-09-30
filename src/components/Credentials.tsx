@@ -40,17 +40,12 @@ const Credentials = () => {
     {
       icon: Star,
       title: "20+ Years Experience",
-      description: "Two decades of proven expertise in environmental consultancy services"
-    },
-    {
-      icon: CheckCircle,
-      title: "500+ Projects Completed",
-      description: "Successfully delivered environmental solutions across various industries"
+      description: "Experts with 20+ of proven expertise in EIA/EMP services"
     },
     {
       icon: Shield,
-      title: "100% Compliance Record",
-      description: "Perfect track record of regulatory compliance for all client projects"
+      title: "Excellent Compliance Record",
+      description: "Exemplary track record of regulatory compliance for all our client"
     },
     {
       icon: Award,
@@ -125,7 +120,7 @@ const Credentials = () => {
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
             Key Achievements
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {achievements.map((achievement, index) => {
               const IconComponent = achievement.icon;
               return (

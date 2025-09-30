@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header className="bg-background border-b border-border sticky top-0 z-50">
       {/* Top Contact Bar */}
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4">
@@ -37,8 +37,9 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+      <div className="bg-background">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="flex items-center gap-3">
@@ -73,12 +74,14 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button 
-              variant="default"
-              className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary"
-            >
-              Request a callback
-            </Button>
+            <a href="#contact">
+              <Button 
+                variant="default"
+                className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary"
+              >
+                Request a callback
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,12 +111,14 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button 
-                variant="default"
-                className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary mt-4"
-              >
-                Request a callback
-              </Button>
+              <a href="#contact">
+                <Button 
+                  variant="default"
+                  className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary mt-4"
+                >
+                  Request a callback
+                </Button>
+              </a>
             </nav>
           </div>
         )}

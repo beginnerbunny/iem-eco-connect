@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
+import { EMAIL_CONFIG, EmailTemplateParams } from "@/config/email";
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -43,16 +45,46 @@ const ContactForm = () => {
       return;
     }
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      // Prepare email template parameters
+      const templateParams: EmailTemplateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        to_email: EMAIL_CONFIG.companyEmail,
+        reply_to: formData.email
+      };
 
-    toast({
-      title: "Inquiry submitted successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        EMAIL_CONFIG.serviceId,
+        EMAIL_CONFIG.templateId,
+        templateParams,
+        EMAIL_CONFIG.publicKey
+      );
 
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
+      if (result.status === 200) {
+        toast({
+          title: "Inquiry submitted successfully!",
+          description: "We'll get back to you within 24 hours.",
+        });
+        
+        // Clear form after successful submission
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        throw new Error('Email sending failed');
+      }
+    } catch (error) {
+      console.error('Email sending error:', error);
+      toast({
+        title: "Failed to send inquiry",
+        description: "Please try again or contact us directly at iem2012@rediffmail.com",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

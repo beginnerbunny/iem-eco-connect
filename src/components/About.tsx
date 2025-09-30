@@ -48,7 +48,7 @@ const About = () => {
               Institute for Environmental Management
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              The Institute for Environmental Management (IEM) delivers
+              Institute for Environmental Management (IEM) delivers
               end‑to‑end environmental consulting, monitoring, and accredited laboratory services
               across India. We are ISO 9001:2015 and OHSAS 45001:2018 certified; NABET/QCI
               (Certificate No. NABET/EIA/24-27/IA 0137), NABL, and JSPCB accredited. Every
@@ -105,15 +105,6 @@ const About = () => {
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">25+</div>
                   <div className="text-sm text-muted-foreground">Years of Expertise</div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="absolute -top-6 -right-6 bg-white shadow-xl">
-              <CardContent className="p-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">500+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
                 </div>
               </CardContent>
             </Card>
