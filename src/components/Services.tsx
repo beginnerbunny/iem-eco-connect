@@ -15,8 +15,8 @@ const Services = () => {
     {
       icon: FileText,
       title: "EC/EIA/EMP/DMP/PFR",
-      description: "Environmental Clearance for Mining, Thermal Power Plants, Steel Plants, Cement Plants, and Building Construction projects.",
-      details: ["Mining EC (O/C & UG)", "Thermal Power Plant", "Steel & Cement Plants", "Building Construction"]
+      description: "Environmental Clearance, Environmental Impact Assessments, Enviornmental Management Plan, Project Feasibility Report for industries.",
+      details: ["Mining of Minerals (O/C & UG)", "Thermal Power Plants", "Coal Washeries", "Steel & Cement Plants", "Building Construction, CETPS & Townships"]
     },
     {
       icon: Shield,
@@ -28,24 +28,24 @@ const Services = () => {
       icon: Activity,
       title: "Pollution Monitoring",
       description: "Complete environmental monitoring and testing services for all parameters.",
-      details: ["Air & Water Quality", "Soil Testing", "Stack Emission", "Baseline Data Generation"]
+      details: ["AmbientvAir, Noise & Water Quality", "Soil Testing", "Stack Emission", "TCLP Test", "Workzone monitoring", "Baseline Data Generation"]
     },
     {
       icon: Search,
       title: "Audit & Compliance",
       description: "Environmental audits and compliance reporting for regulatory requirements.",
-      details: ["Environmental Audit", "Water & Energy Audit", "Carbon Footprint", "GHG Calculations"]
+      details: ["Environmental Audit", "Water & Energy Audit", "CTE/CTO/EC Compliance","Carbon Footprint & Sequestration Report", "GHG Calculations"]
     },
     {
       icon: MapPin,
       title: "Mine Planning",
       description: "Comprehensive mine planning and geological assessment services.",
-      details: ["Major & Minor Mine Plans", "Hydrogeological Reports", "Geological Surveys", "Land Use Planning"]
+      details: ["Major & Minor Mineral Mine Plans", "Hydrogeological Reports", "Geological Surveys", "Land Use Planning"]
     },
     {
       icon: TreePine,
       title: "Forest & Wildlife",
-      description: "Forest diversion and wildlife management planning services.",
+      description: "Forest diversion (FDP)and wildlife management planning services.",
       details: ["Forest Diversion Plan", "Wildlife Management", "Flora & Fauna Survey", "Baseline Studies"]
     },
     {

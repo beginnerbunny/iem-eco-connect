@@ -30,12 +30,12 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Leading Environmental
               <span className="block text-environmental-light">
-                Consultancy Services
+                Consultancy and Laboratory Services
               </span>
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
               Comprehensive environmental solutions for industries across India. 
-              From EIA assessments to pollution monitoring, we ensure regulatory 
+              From EIA assessments, pollution monitoring to laboratory services, we ensure regulatory 
               compliance and sustainable development.
             </p>
           </div>

@@ -22,7 +22,8 @@ const Header = () => {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>iem2012@rediffmail.com</span>
+                <span>iem2012@rediffmail.com,</span>
+                <span>rch.jainsc58@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -40,88 +41,89 @@ const Header = () => {
       <div className="bg-background">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center gap-3">
-              <picture>
-                <source srcSet="/iem-logo.svg" type="image/svg+xml" />
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <a href="#home" className="flex items-center gap-3">
                 <img
                   src="/iem-logo.png"
                   alt="IEM – Institute for Environmental Management"
-                  className="h-12 md:h-14 w-auto bg-transparent object-contain"
+                  className="h-14 md:h-16 w-auto object-contain border-0"
                 />
-              </picture>
-              <div className="leading-tight">
-                <span className="block text-xs md:text-sm font-normal text-muted-foreground">
-                  Institute for Environmental Management
-                </span>
-              </div>
-            </a>
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.name}
+                <div className="leading-tight">
+                  <span className="block text-xs md:text-sm font-normal text-muted-foreground">
+                    Institute for Environmental Management
+                  </span>
+                </div>
               </a>
-            ))}
-          </nav>
+            </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <a href="#contact">
-              <Button 
-                variant="default"
-                className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary"
-              >
-                Request a callback
-              </Button>
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-foreground" />
-            ) : (
-              <Menu className="h-6 w-6 text-foreground" />
-            )}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <nav className="flex flex-col space-y-4">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
+            </nav>
+
+            {/* CTA Button */}
+            <div className="hidden md:block">
               <a href="#contact">
                 <Button 
                   variant="default"
-                  className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary mt-4"
+                  className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary"
                 >
                   Request a callback
                 </Button>
               </a>
-            </nav>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-foreground" />
+              ) : (
+                <Menu className="h-6 w-6 text-foreground" />
+              )}
+            </button>
           </div>
+<<<<<<< Updated upstream
         )}
+=======
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden py-4 border-t border-border">
+              <nav className="flex flex-col space-y-4">
+                {navigation.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+                <a href="#contact">
+                  <Button 
+                    variant="default"
+                    className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-darker hover:to-primary mt-4"
+                  >
+                    Request a callback
+                  </Button>
+                </a>
+              </nav>
+            </div>
+          )}
+>>>>>>> Stashed changes
         </div>
       </div>
     </header>

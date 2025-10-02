@@ -9,17 +9,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <picture>
-                <source srcSet="/iem-logo.svg" type="image/svg+xml" />
-                <img
-                  src="/iem-logo.png"
-                  alt="IEM – Institute for Environmental Management"
-                  className="h-10 md:h-12 w-auto bg-transparent object-contain"
-                />
-              </picture>
-              <span className="sr-only">IEM – Institute for Environmental Management</span>
-            </div>
             <h3 className="text-2xl font-bold mb-4">
               Institute for Environmental Management
             </h3>
@@ -87,7 +76,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 mt-1 flex-shrink-0" />
                 <div className="text-sm">
                   <div>iem2012@rediffmail.com</div>
-                  <div>rch.jain58@gmail.com</div>
+                  <div>rch.jainsc58@gmail.com</div>
                 </div>
               </div>
             </div>

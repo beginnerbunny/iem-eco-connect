@@ -11,12 +11,6 @@ const Credentials = () => {
       status: "Active"
     },
     {
-      title: "OHSAS 45001:2018",
-      description: "Occupational Health and Safety Management System certification",
-      category: "Safety Management", 
-      status: "Active"
-    },
-    {
       title: "NABET/QCI Accredited",
       description: "Accredited by NABET/QCI (EIA) for environmental consultancy",
       category: "EIA Accreditation",
@@ -32,6 +26,12 @@ const Credentials = () => {
       title: "JSPCB Recognized",
       description: "Recognition from Jharkhand State Pollution Control Board",
       category: "Regulatory Approval",
+      status: "Active"
+    },
+    {
+      title: "OHSAS 45001:2018",
+      description: "Occupational Health and Safety Management System certification",
+      category: "Safety Management", 
       status: "Active"
     }
   ];

@@ -7,6 +7,14 @@ export const EMAIL_CONFIG = {
   companyEmail: import.meta.env.VITE_COMPANY_EMAIL || 'iem2012@rediffmail.com'
 };
 
+// Debug: Log configuration (remove in production)
+console.log('EmailJS Config:', {
+  serviceId: EMAIL_CONFIG.serviceId,
+  templateId: EMAIL_CONFIG.templateId,
+  publicKey: EMAIL_CONFIG.publicKey ? '***' + EMAIL_CONFIG.publicKey.slice(-4) : 'Not set',
+  companyEmail: EMAIL_CONFIG.companyEmail
+});
+
 // Email template parameters
 export interface EmailTemplateParams {
   from_name: string;

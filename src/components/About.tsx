@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, MapPin, Users, Calendar } from "lucide-react";
-import aboutImage from "@/assets/about-office.jpg";
+import aboutImage from "@/assets/about-office.png";
 
 const About = () => {
   const certifications = [

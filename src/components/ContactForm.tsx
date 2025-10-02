@@ -46,6 +46,13 @@ const ContactForm = () => {
     }
 
     try {
+      // Debug: Check if EmailJS is properly configured
+      console.log('Sending email with config:', {
+        serviceId: EMAIL_CONFIG.serviceId,
+        templateId: EMAIL_CONFIG.templateId,
+        publicKey: EMAIL_CONFIG.publicKey ? '***' + EMAIL_CONFIG.publicKey.slice(-4) : 'Not set'
+      });
+
       // Prepare email template parameters
       const templateParams: EmailTemplateParams = {
         from_name: formData.name,
@@ -56,6 +63,8 @@ const ContactForm = () => {
         reply_to: formData.email
       };
 
+      console.log('Template params:', templateParams);
+
       // Send email using EmailJS
       const result = await emailjs.send(
         EMAIL_CONFIG.serviceId,
@@ -63,6 +72,8 @@ const ContactForm = () => {
         templateParams,
         EMAIL_CONFIG.publicKey
       );
+
+      console.log('EmailJS result:', result);
 
       if (result.status === 200) {
         toast({
@@ -77,9 +88,27 @@ const ContactForm = () => {
       }
     } catch (error) {
       console.error('Email sending error:', error);
+      
+      // More specific error messages
+      let errorMessage = "Please try again or contact us directly at iem2012@rediffmail.com";
+      
+      if (error instanceof Error) {
+        if (error.message.includes('Invalid email')) {
+          errorMessage = "Invalid email configuration. Please check your EmailJS setup.";
+        } else if (error.message.includes('Service not found')) {
+          errorMessage = "Email service not found. Please check your Service ID.";
+        } else if (error.message.includes('Template not found')) {
+          errorMessage = "Email template not found. Please check your Template ID.";
+        } else if (error.message.includes('Invalid public key')) {
+          errorMessage = "Invalid public key. Please check your EmailJS configuration.";
+        } else {
+          errorMessage = `Error: ${error.message}`;
+        }
+      }
+      
       toast({
         title: "Failed to send inquiry",
-        description: "Please try again or contact us directly at iem2012@rediffmail.com",
+        description: errorMessage,
         variant: "destructive"
       });
     } finally {
