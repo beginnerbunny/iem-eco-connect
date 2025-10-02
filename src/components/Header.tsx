@@ -94,9 +94,6 @@ const Header = () => {
               )}
             </button>
           </div>
-<<<<<<< Updated upstream
-        )}
-=======
 
           {/* Mobile Menu */}
           {isMenuOpen && (
@@ -123,7 +120,6 @@ const Header = () => {
               </nav>
             </div>
           )}
->>>>>>> Stashed changes
         </div>
       </div>
     </header>
