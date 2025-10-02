@@ -15,4 +15,5 @@ export interface EmailTemplateParams {
   message: string;
   to_email: string;
   reply_to: string;
+  [key: string]: unknown;
 }
