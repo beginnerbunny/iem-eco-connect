@@ -50,7 +50,7 @@ const Header = () => {
                   className="h-14 md:h-16 w-auto object-contain border-0"
                 />
                 <div className="leading-tight">
-                  <span className="block text-xs md:text-sm font-normal text-muted-foreground">
+                  <span className="block text-base font-normal text-muted-foreground">
                     Institute for Environmental Management
                   </span>
                 </div>

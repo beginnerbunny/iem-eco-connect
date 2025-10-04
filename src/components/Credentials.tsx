@@ -5,7 +5,7 @@ import { Award, Shield, CheckCircle, Star } from "lucide-react";
 const Credentials = () => {
   const certifications = [
     {
-      title: "ISO 9001:2015",
+      title: "ISO 9001:2015 and 14001:2015",
       description: "Quality Management System certification ensuring consistent service delivery",
       category: "Quality Management",
       status: "Active"
@@ -32,6 +32,12 @@ const Credentials = () => {
       title: "OHSAS 45001:2018",
       description: "Occupational Health and Safety Management System certification",
       category: "Safety Management", 
+      status: "Active"
+    },
+    {
+      title: "MOEFCC Certified",
+      description: "Compliant with the Nvironment Impact Assessment regulations and other Environmental standards",
+      category: "Ministry of Environment, Forest and Climate Change", 
       status: "Active"
     }
   ];

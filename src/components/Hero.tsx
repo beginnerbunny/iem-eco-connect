@@ -7,7 +7,8 @@ const Hero = () => {
     "ISO 9001:2015 Certified",
     "NABET/QCI Accredited",
     "NABL Accredited",
-    "JSPCB Recognized"
+    "JSPCB Recognized",
+    "MOEFCC Certified",
   ];
 
   return (
@@ -34,7 +35,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-              Comprehensive environmental solutions for industries across India. 
+              Institute for Environmental Management (IEM) provides comprehensive environmental solutions for industries across India. 
               From EIA assessments, pollution monitoring to laboratory services, we ensure regulatory 
               compliance and sustainable development.
             </p>
