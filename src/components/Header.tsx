@@ -20,7 +20,7 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
+              <div className="hidden sm:flex items-center gap-2">
                 <Mail className="h-4 w-4" />
                 <span>iem2012@rediffmail.com,</span>
                 <span>rch.jainsc58@gmail.com</span>
